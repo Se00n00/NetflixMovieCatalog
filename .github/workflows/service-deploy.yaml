@@ -1,4 +1,4 @@
-name: Netflix Movie Catalog Service Deployment
+name: Netflix Movie Catalog Deployment
 
 on:
   push:
@@ -9,7 +9,7 @@ env:
   EC2_PUBLIC_ADDRESS: mohit.devops-days-upes.com
   EC2_USER_NAME: ubuntu
   SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} 
-  TARGET_DIR: /home/ubuntu/NetflixMovieCatalog
+  TARGET_DIR: ~/app
   PRIVATE_KEY_PATH: .private_key.pem
 
 jobs:
